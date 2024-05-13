@@ -30,7 +30,7 @@ public class LoginServlet extends HttpServlet {
 
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/myWebsiteInfo", "root", "p!Ckn!ckc@s3");
+			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/myWebsiteInfo", "root", "[CHANGE TO YOUR PASSWORD]");
 			String firstName = "";
 			String userName = request.getParameter("username");
 			String password = request.getParameter("password");
