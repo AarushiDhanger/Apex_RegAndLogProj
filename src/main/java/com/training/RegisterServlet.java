@@ -33,7 +33,7 @@ public class RegisterServlet extends HttpServlet {
 		try {
 //			ServletContext servletContext = config.getServletContext();
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/myWebsiteInfo", "root", "p!Ckn!ckc@s3");
+			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/myWebsiteInfo", "root", "[CHANGE TO YOUR PASSWORD]");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} catch (Exception e) {
